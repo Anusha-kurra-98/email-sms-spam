@@ -129,7 +129,7 @@ model = pickle.load(open('model.pkl','rb'))
 
 
 
-st.title(":black[Email/SMS Spam Classifier]")
+st.title(":green[Email/SMS Spam Classifier]")
 
 input_sms = st.text_area(":black[Enter the message]")
 

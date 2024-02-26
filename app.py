@@ -8,6 +8,7 @@ import  sklearn
 
 import base64
 import joblib
+nltk.download('punkt')
 
 ps = PorterStemmer()
 

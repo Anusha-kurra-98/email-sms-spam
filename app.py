@@ -129,13 +129,13 @@ model = pickle.load(open('model.pkl','rb'))
 
 
 
-st.title("Email/SMS Spam Classifier")
+st.title(":black[Email/SMS Spam Classifier]")
 
-input_sms = st.text_area("Enter the message")
+input_sms = st.text_area(":black[Enter the message]")
 
-if st.button('Predict'):
+if st.button(':black[Predict]'):
     if not input_sms:
-        st.header("Please enter a message")
+        st.header(":black[Please enter a message]")
     else:
 
     # 1. preprocess
@@ -147,6 +147,6 @@ if st.button('Predict'):
         # st.header(result)
     # 4. Display
         if result == 1:
-            st.header("Spam")
+            st.header(":black[Spam]")
         else:
-            st.header("Not Spam")
+            st.header(":black[Not Spam]")

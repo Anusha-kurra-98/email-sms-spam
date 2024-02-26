@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spam-classifier-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spam-classifier
+  template:
+    metadata:
+      labels:
+        app: spam-classifier
+    spec:
+      containers:
+        - name: spam-classifier
+          image: dockerimage:71322f4ba060
+          ports:
+            - containerPort: 8501

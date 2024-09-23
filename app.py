@@ -133,7 +133,7 @@ st.title(":green[Email/SMS Spam Classifier]")
 
 input_sms = st.text_area(":violet[Enter the message]")
 
-if st.button(':black[Predict]'):
+if st.button(":black[Predict]"):
     if not input_sms:
         st.header(":red[Please enter a message]")
     else:
